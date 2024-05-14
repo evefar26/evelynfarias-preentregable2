@@ -1,0 +1,314 @@
+/*esto es un comentario 
+elemento { propiedad valor;
+    }
+    */
+/* font-family, @font-face*/
+@font-face {
+    font-family: 'roboto-general';
+    src: url(https://fonts.google.com/selection/embed);
+
+
+}
+
+
+
+
+html {
+    font-size: 10px;
+}
+
+
+.navbar {
+    overflow: auto;
+    background-color: pink;
+    /* Color de fondo del navbar */
+    display: relative;
+    justify-content: center;
+    position:fixed;
+    top: 10px;
+    left: 100px;
+    right: 50px;
+
+}
+
+.navbar a {
+    float:center;
+    display: relative;
+    color: blue;
+    text-align:center;
+    padding: 70px 70px;
+    text-decoration: solid;
+    position: relative;
+
+
+}
+
+.navbar a:hover {
+    background-color: cornflowerblue;
+    /* Color de fondo al pasar el cursor sobre los enlaces */
+    color: blueviolet;
+}
+
+
+
+
+
+p {
+    color: blueviolet;
+    font-size: 10px;
+
+}
+
+h1 {
+    background-color: pink;
+    width: 250px;
+    height: 50px;
+    padding: 30px 30px 30px 30px;
+    border: 1px solid blueviolet;
+    margin: 80px 80px 80px 80px;
+
+    /* pone el elemento en linea y respeta los estilos*/
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 500px;
+
+
+}
+
+h2 {
+    width: 200px;
+    height: 20px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
+    display:flex;
+    position:relative;
+    top: 10px;
+    left: 650px;
+    right: 600px;
+
+
+}
+
+section p {
+    color: blueviolet;
+}
+
+#titulo h1 {
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#titulodos h2 {
+    color: darkmagenta;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+
+
+
+
+#titulotres h3 {
+    color: cornflowerblue;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#datos h5 {
+    color: darkmagenta;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.datos {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+}
+
+#inscripcion p {
+    color: darkmagenta;
+    font-size: 15px;
+    font-style: normal;
+}
+
+
+.parrafouno {
+    color: darkmagenta;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+}
+
+.parrafodos {
+    color: blueviolet;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+
+
+}
+
+.parrafotres {
+    color: darkmagenta;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+
+}
+
+
+
+footer {
+    background-color: pink;
+}
+
+p {
+    font-family: serif;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: justify;
+
+}
+
+/*unidades de medida absolutas*/
+p {
+    font-size: 10px;
+    margin: 20px;
+
+}
+
+/* unidades de medida relativas*/
+
+.logo {
+    width: 5%;
+    height: auto;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img-one {
+    flex-direction: column;
+
+
+}
+
+.img-two {
+    flex-flow: row wrap;
+    width: 30px;
+
+
+}
+
+.img-three {
+    flex-direction: column;
+
+
+}
+
+.img-four {
+    flex-flow: row wrap;
+
+}
+
+
+
+
+a {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 4em;
+    /* esta depende de la medida por default que nosotros le ponemos*/
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Rem es relativo al tamaño del elemento root*/
+
+.whatsapp {
+    width: 30px;
+    height: auto;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1px;
+
+}
+
+.facebook {
+    width: 30px;
+    height: auto;
+
+}
+
+.instagram {
+    width: 30px;
+    height: auto;
+
+}
+
+#section-container {
+
+    color: blueviolet;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section {
+    display: flex;
+    height: 300px;
+    align-items: center;
+
+}
+
+#photo-grid-container {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+
+
+}
+
+.photo-grid-one {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.photo-grid-two {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}

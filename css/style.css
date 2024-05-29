@@ -1,63 +1,95 @@
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: blueviolet;
-    }
-}
 
-@media only screen and (min-width: 501px) and (max-width: 960px) {
-    body {
-        background-color: deeppink;
-    }
-}
-
-@media only screen and (min-width: 961px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-@font-face {
-    font-family: 'roboto-general';
-    src: url(https://fonts.google.com/selection/embed);
-}
-
+/*css - estilos*/
+/*html*/
 
 html {
     font-size: 10px;
 }
 
+/*body*/
 
-.navbar {
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color:lightpink;
+}
+
+/*header y navbar*/
+
+header .logo {
+    max-height: 75px;
+}
+
+header .navbar {
     overflow: hidden;
     background-color: pink;
     position: fixed;
     top: 10px;
-    left: 100px;
-    right: 50px;
+    left: 200px;
+    right: 200px;
     z-index: 1000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50px; 
+    
 
 }
 
-.navbar a {
-    float: center;
+header .navbar ul {
+    list-style: none;
     display: relative;
-    color: blue;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 70px;
+}
+
+header .navbar ul a {
+    float: center;
     text-decoration: solid;
-    position: relative;
-
-
+    color:blueviolet;
+    padding: 10px 15px;
+    margin: 0 10px;
 }
 
-.navbar a:hover {
-    background-color: cornflowerblue;
-    color: blueviolet;
+header .navbar ul a:hover {
+    background-color:skyblue;
+    border-radius: 5px;
+   
 }
 
+/* Main - parrafos - titulos -datos -formulario */
 
+main .container {
+    padding: 20px;
+}
 
+main .text-center h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
+main .text-center img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+main .row p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
 p {
     color: blueviolet;
@@ -72,30 +104,18 @@ p {
 
 h1 {
     background-color: pink;
-    width: 350px;
-    height: 150px;
-    padding: 40px;
-    border: 1px solid blueviolet;
-    margin: 40px;
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    left: 500px;
+    padding: 20px;
+    margin: 0px auto;
     text-decoration: underline;
-
+    width: fit-content;
 
 }
 
 h2 {
-    width: 200px;
-    height: 20px;
     padding: 5px;
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
-    position: relative;
-    top: 10px;
-    left: 650px;
-    right: 600px;
+    width: fit-content;
 }
 
 section p {
@@ -108,14 +128,22 @@ section p {
     font-size: 30px;
 }
 
+.titulo h1 {
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 30px;
+}
 #titulodos h2 {
     display: inline-block;
-    color: darkmagenta;
+    color:darkmagenta;
     font-style: italic;
     font-size: 20px;
     position: relative;
-    right: 50px;
+    right: 100px;
     top: 0;
+    width: 350px;
+    height: 150px;
+    padding: 40px;
 
 }
 
@@ -170,6 +198,70 @@ section p {
 
 }
 
+
+/*imagenes-fotos*/
+
+.calendario,
+.yogadeados,
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    
+}
+
+
+.imgyoga {
+    color: cornflowerblue;
+    font-size: 5px;
+    font-family: 'Times New Roman';
+    margin: 20px;
+
+}
+
+/*grid - grid container*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-container,
+.grid-fotos {
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-fotos {
+    width: 50%;
+    height: 50%;
+}
+
+.grid-item .imgyoga p {
+    margin: 20px 20;
+}
+
+.grid-item .img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
 .form-container {
     max-width: 50px;
     margin: 10px;
@@ -178,6 +270,25 @@ section p {
     border-radius: 5px;
     background-color: white;
 }
+
+#section-container {
+
+    color: blueviolet;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*formulario - pag contacto*/
 
 .form-group {
     margin-bottom: 50px;
@@ -212,127 +323,89 @@ section p {
     background-color: darkmagenta;
 }
 
+
+
+
+/* Footer -redes -enviar */
+
 footer {
-    background-color: pink;
-
+    background-color:lightpink;
+    padding: 20px 0;
+    text-align: center;
 }
 
+footer .section {
+    margin-bottom: 20px;
+}
 
+footer #redes a {
+    margin: 0 10px;
+}
 
-.logo {
-    width: 5%;
+footer #redes img {
+    max-width: 30px;
     height: auto;
 }
 
-.img {
-    width: 400px;
-    height: 350px;
-    display: relative;
-    justify-content: center;
-
+footer #datos h5, footer #datos p {
+    margin: 0;
 }
 
-#carousel-item {
-    width: 30px;
-    height: 50px;
-    display: relative;
-    justify-content: center;
-
-}
-
-
-.calendario,
-.yogadeados,
-.mapa {
+footer #inscripcion form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1400px;
-    height: 500px;
-    position: relative;
-
-}
-
-
-.imgyoga {
-    color: cornflowerblue;
-    font-size: 5px;
-    font-family: 'Times New Roman';
-    margin: 20px;
-
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.grid-container,
-.grid-fotos {
-    font-size: 10px;
-    padding: 15px;
-    border: none;
-
+footer #inscripcion input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
 }
 
-.grid-fotos {
-    width: 50%;
-    height: 50%;
+footer #inscripcion button {
+    padding: 5px 10px;
 }
 
-.yogaembarazadas,
-.yogaamigos,
-.yogaaereo,
-.yogaadultos {
-    grid-column: auto;
-    grid-row: auto;
-}
-
-
-a {
-    font-size: 2rem;
-}
-
-
-.whatsapp {
-    width: 30px;
-    height: auto;
-    position: sticky;
-    bottom: 10px;
-    right: 10px;
-    z-index: 1px;
-
-}
-
-.facebook {
-    width: 30px;
-    height: auto;
-
-}
-
-.instagram {
-    width: 30px;
+footer .logo {
+    max-width: 100px;
     height: auto;
 }
 
-#section-container {
-
-    color: blueviolet;
-    background-color: pink;
-    display: flex;
-    justify-content: space-between;
-
+footer h6 {
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
-.section {
-    display: flex;
-    height: 75px;
-    align-items: center;
-    justify-content: space-between;
+/* Media Queries */
 
+@media only screen and (max-width: 500px) {
+    body {
+        background-color:lightslategray;
+    }
+    header .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .navbar ul a {
+        padding: 5px 0;
+    }
+
+    footer #inscripcion form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    body {
+        background-color:salmon;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: lightblue;
+    }
 }

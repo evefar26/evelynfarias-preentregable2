@@ -1,0 +1,164 @@
+html {
+    font-size: 10px;
+}
+
+
+main .container {
+    padding: 20px;
+}
+
+main .text-center h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main .text-center img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+main .row p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+p {
+    @extend %common-text-styles;
+    font-size: 10px;
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    margin: 20px;
+
+}
+
+h1 {
+    background-color: pink;
+    padding: 20px;
+    margin: 0px auto;
+    text-decoration: underline;
+    width: fit-content;
+
+}
+
+h2 {
+    padding: 5px;
+    margin: 10px auto;
+    display: flex;
+    width: fit-content;
+}
+
+section p {
+    color: blueviolet;
+}
+
+#titulo h1 {
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.titulo h1 {
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 30px;
+}
+#titulodos h2 {
+    display: inline-block;
+    color:blueviolet;
+    font-style: italic;
+    font-size: 20px;
+    position: relative;
+    right: 100px;
+    top: 0;
+    width: 350px;
+    height: 150px;
+    padding: 40px;
+
+}
+
+#dondeestamos {
+    color: cornflowerblue;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+
+
+.titulotres h3 {
+    color: cornflowerblue;
+    font-size: 15px;
+}
+
+
+
+
+#datos h5 {
+    color: darkmagenta;
+    font-size: 10px;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.datos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#inscripcion p {
+    color: darkmagenta;
+    font-size: 15px;
+
+}
+
+
+.parrafouno {
+    color: darkmagenta;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parrafodos {
+    color: blueviolet;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-container,
+.grid-fotos {
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-fotos {
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
+

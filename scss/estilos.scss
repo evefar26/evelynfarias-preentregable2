@@ -1,0 +1,22 @@
+@import "./utilities/reset";
+@import "./utilities/global";
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./utilities/extend";
+
+
+
+
+
+@import "./components/header";
+@import "./components/footer";
+@import "./utilities/gradientes";
+@import "./utilities/transformaciones";
+@import "./page/main-calendario";
+@import "./page/main-contact";
+@import "./page/main-somos";
+@import "./page/main-ubication";
+
+@import "./utilities/mediaqueries";
+
+

@@ -1,0 +1,42 @@
+.calendario,
+.yogadeados,
+.mapa {
+    @include flex-center;
+    width: 1400px;
+    height: 500px;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+
+    .grid-item {
+        text-align: center;
+
+        .imgyoga p {
+            margin: 20px 20;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.grid-fotos {
+    width: 50%;
+    height: 50%;
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+}

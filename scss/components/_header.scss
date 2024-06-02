@@ -1,0 +1,43 @@
+header {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: lightpink;
+
+    .logo {
+        max-height: 75px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: pink;
+        position: fixed;
+        top: 10px;
+        left: 200px;
+        right: 200px;
+        z-index: 1000;
+        @include flex-center;
+        height: 50px;
+
+        ul {
+            list-style: none;
+            display: relative;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            a {
+                float: center;
+                text-decoration: solid;
+                color: blueviolet;
+                padding: 10px 15px;
+                margin: 0 10px;
+
+                &:hover {
+                    background-color: skyblue;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

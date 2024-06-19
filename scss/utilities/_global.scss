@@ -67,10 +67,10 @@ section p {
 }
 #titulodos h2 {
     display: inline-block;
-    color:blueviolet;
+    color:darkslategrey;
     font-style: italic;
     font-size: 20px;
-    position: relative;
+    position: flex;
     right: 100px;
     top: 0;
     width: 350px;
@@ -118,13 +118,13 @@ section p {
 
 .parrafouno {
     color:darkslategrey;
-    font-size: 40%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-family:sans-serif
 }
 
 .parrafodos {
-    color: blueviolet;
-    font-size: 1.5em;
+    color:darkslategrey;
+    font-size: 20px;
     font-family: 'Times New Roman';
 
 

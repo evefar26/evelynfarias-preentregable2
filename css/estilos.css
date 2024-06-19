@@ -443,10 +443,6 @@ footer h6 {
   .grid-container {
     grid-template-columns: 1fr;
   }
-  .img-fluid {
-    width: 100%;
-    height: auto;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -51,11 +51,29 @@
             color: rosybrown;
         }
     }
+
     .img-fluid {
-        width: auto; 
-        height: auto; 
+        width: 100%;
+        height: auto;
+    }
+
+    .calendario,
+    .yogaadultos,
+    .yogaembarazadas,
+    .yogaaereo,
+    .yogaamigos {
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    header .logo {
+        max-width: 100px;
     }
 }
+
 
 @media only screen and (min-width: 501px) and (max-width: 960px) {
     body {
@@ -79,27 +97,27 @@
         font-size: 1.5em;
     }
 
-    
-}
 
-@media only screen and (min-width: 961px) {
-    body {
-        background-color: lightslategray;
-    }
+} 
 
-    h1 {
-        font-size: 2.5rem;
-    }
+    @media only screen and (min-width: 961px) {
+        body {
+            background-color: lightslategray;
+        }
 
-    p {
-        font-size: 1.5rem;
-    }
+        h1 {
+            font-size: 2.5rem;
+        }
 
-    .navbar ul a {
-        font-size: 1.5rem;
-    }
+        p {
+            font-size: 1.5rem;
+        }
 
-    .grid-container {
-        grid-template-columns: 1fr;
+        .navbar ul a {
+            font-size: 1.5rem;
+        }
+
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
     }
-}

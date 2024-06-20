@@ -36,7 +36,7 @@ p {
 
 h1 {
     background-color: pink;
-    padding: 20px;
+    padding: 15px;
     margin: 0px auto;
     text-decoration: underline;
     width: fit-content;
@@ -50,8 +50,16 @@ h2 {
     width: fit-content;
 }
 
+h3 {
+    color: darkslategray;
+    padding: 20px;
+    margin: 0px auto;
+    text-decoration:none;
+    width: fit-content;
+
+}
 section p {
-    color: blueviolet;
+    color:darkslategrey;
 }
 
 #titulo h1 {
